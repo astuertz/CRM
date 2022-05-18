@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
+  const dark = StyleSheet.create({
     pageContainer: {
       justifyContent: 'center',
       alignItems: 'center',
@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     },
     textDefault: {
         fontSize: 14,
-        color: 'black',
+        color: 'white',
     },
   });
 
-  export default styles;
+  export default dark;

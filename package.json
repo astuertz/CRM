@@ -10,8 +10,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@azure/core-asynciterator-polyfill": "^1.0.2",
+    "@reduxjs/toolkit": "^1.8.1",
     "react": "17.0.2",
-    "react-native": "0.68.2"
+    "react-native": "0.68.2",
+    "react-redux": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
