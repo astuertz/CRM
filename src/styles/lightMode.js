@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 
   const light = StyleSheet.create({
+    root: {
+      flex: 1,
+    },
     pageContainer: {
       justifyContent: 'center',
       alignItems: 'center',

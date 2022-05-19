@@ -11,7 +11,7 @@ import Home from '../screens/Home';
 import Contacts from '../screens/Contacts';
 import Settings from '../screens/Settings';
 
-const Navigation = () => {
+const RootStackScreen = () => {
 
     //const darkMode = useSelector((state) => state.style.darkMode);
     //const styles = darkMode ? dark : light;
@@ -27,8 +27,11 @@ const Navigation = () => {
     );
   }
 
-export default () => {
+  export default () => {
+
+    return (
     <NavigationContainer>
-        <Navigation />
+        <RootStackScreen />
     </NavigationContainer>
+    );
   };
