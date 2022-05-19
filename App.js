@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text,} from 'react-native';
+import {View, Text, SafeAreaView} from 'react-native';
 import dark from './src/styles/darkMode';
 import light from './src/styles/lightMode';
 import { useSelector } from 'react-redux';
+import Navigation from './src/routes/navigation';
 
 const App = () => {
 
@@ -11,9 +12,9 @@ const App = () => {
 
 
   return (
-    <View style={styles.pageContainer} >
-      <Text style={styles.textDefault} >Hello World!</Text> 
-    </View>
+    <SafeAreaView>
+      <Navigation />
+    </SafeAreaView>
   );
 };
 
