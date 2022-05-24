@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, } from 'react-native';
 import dark from '../styles/darkMode'
 import light from '../styles/lightMode';
 import { useSelector } from 'react-redux';
 import Header from '../components/Header';
+import Map from '../data/map';
 
 const Contacts = () => {
 
@@ -13,8 +14,8 @@ const Contacts = () => {
   return (
     <View style={styles.pageContainer} >
       <Header />
-      <View style={[styles.elementContainer, {height: 200,}]} >
-        <Text style={styles.textDefault} >Contacts</Text>
+      <View style={[styles.elementContainerSquare, {height: 200,}]} >
+        <Map />
       </View>        
     </View>
   );
