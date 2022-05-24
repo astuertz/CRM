@@ -5,4 +5,7 @@ export const store = configureStore({
   reducer: {
       style: reduxstyleSlice,
   },
+  middleware: getDefaultMiddleware => getDefaultMiddleware({
+    serializableCheck: false
+  })
 })

@@ -6,16 +6,13 @@ export const reduxstyleSlice = createSlice({
     darkMode: false,
   },
   reducers: {
-    initDarkMode: state => {
-      state.darkMode = true
-    },
-    terminateDarkMode: state => {
-      state.darkMode = false
-    },
+    toggleDarkMode: state => {
+      state.darkMode = !state.darkMode
   },
+}
 })
 
 // Action creators are generated for each case reducer function
-export const { initDarkMode, terminateDarkMode } = reduxstyleSlice.actions;
+export const { toggleDarkMode } = reduxstyleSlice.actions;
 
 export default reduxstyleSlice.reducer;
