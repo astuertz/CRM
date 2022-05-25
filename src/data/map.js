@@ -1,9 +1,10 @@
 import React from "react";
-import { View, Text, ScrollView, } from 'react-native';
-import data from "./data";
+import { View, Text, } from 'react-native';
+import { ScrollView } from "react-native-gesture-handler";
 import dark from '../styles/darkMode'
 import light from '../styles/lightMode';
 import { useSelector } from 'react-redux';
+import Rows from './rows';
 
 const dataMap = () => {
 
@@ -11,66 +12,69 @@ const dataMap = () => {
     const styles = darkMode ? dark : light;
     
     return (
-        <ScrollView horizontal>
+        <ScrollView horizontal >
+        <View style={styles.dataScrollView} >
             <View style={styles.dataContainer} >
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>First Name</Text>
+                    <Text style={styles.textDefaultBold}>First Name</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Last Name</Text>
+                    <Text style={styles.textDefaultBold}>Last Name</Text>
                 </View>   
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Phone Number</Text>
+                    <Text style={styles.textDefaultBold}>Phone Number</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Email</Text>
+                    <Text style={styles.textDefaultBold}>Email</Text>
                 </View>          
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Address</Text>
+                    <Text style={styles.textDefaultBold}>Address</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Point of Contact</Text>
+                    <Text style={styles.textDefaultBold}>Point of Contact</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Notes</Text>
+                    <Text style={styles.textDefaultBold}>Notes</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Created On</Text>
+                    <Text style={styles.textDefaultBold}>Created On</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Last Edited</Text>
+                    <Text style={styles.textDefaultBold}>Last Edited</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Last Contacted</Text>
+                    <Text style={styles.textDefaultBold}>Last Contacted</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Related To</Text>
+                    <Text style={styles.textDefaultBold}>Related To</Text>
                 </View> 
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Contacted?</Text>
+                    <Text style={styles.textDefaultBold}>Contacted?</Text>
                 </View>  
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Appointment Set?</Text>
+                    <Text style={styles.textDefaultBold}>Appointment Set?</Text>
                 </View>                       
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Appointment Date</Text>
+                    <Text style={styles.textDefaultBold}>Appointment Date</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Enrolled?</Text>
+                    <Text style={styles.textDefaultBold}>Enrolled?</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Enrollment Status</Text>
+                    <Text style={styles.textDefaultBold}>Enrollment Status</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Advancement</Text>
+                    <Text style={styles.textDefaultBold}>Advancement</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Last Advancement</Text>
+                    <Text style={styles.textDefaultBold}>Last Advancement</Text>
                 </View>
                 <View style={styles.dataHeaderContainer} >
-                    <Text style={styles.textDefault}>Network</Text>
+                    <Text style={styles.textDefaultBold}>Network</Text>
                 </View>
             </View>
+            <Rows />
+        </View>
         </ScrollView>
     );}
 

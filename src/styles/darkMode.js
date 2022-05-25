@@ -57,6 +57,11 @@ const PAGE_CONTAINER_PADDING = 5;
     horizontalRow: {
       flexDirection: 'row',
     },
+    dataScrollView: {
+      flexDirection: 'column',
+      borderColor: 'white',
+      borderBottomWidth: 2,
+    },
     dataContainer: {
       flexDirection: 'row',
       height: HEIGHT * .05,
@@ -74,6 +79,14 @@ const PAGE_CONTAINER_PADDING = 5;
       alignItems: 'center',
       borderColor: 'white',
       backgroundColor: '#121212',
+      borderWidth: 1,
+      width: 150,
+    },
+    dataCellContainerActive: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderColor: 'white',
+      backgroundColor: '#242323',
       borderWidth: 1,
       width: 150,
     },
