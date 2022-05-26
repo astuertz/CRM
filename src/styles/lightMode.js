@@ -54,6 +54,14 @@ const PAGE_CONTAINER_PADDING = 5;
     horizontalRow: {
       flexDirection: 'row',
     },
+    optionsRow: {
+      flexDirection: 'row',
+      borderColor: 'black',
+      borderBottomWidth: 0,
+      borderTopWidth: 0,
+      paddingHorizontal: 40,
+      paddingVertical: 10,
+    },
     dataScrollView: {
       flexDirection: 'column',
       borderColor: 'black',
@@ -93,6 +101,11 @@ const PAGE_CONTAINER_PADDING = 5;
     },
     textDefaultBold: {
       fontSize: 14,
+      color: 'black',
+      fontWeight: 'bold',
+    },
+    textHeader1: {
+      fontSize: 16,
       color: 'black',
       fontWeight: 'bold',
     },
